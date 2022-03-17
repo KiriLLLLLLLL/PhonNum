@@ -10,7 +10,8 @@ def input_data():
         }
     return dictionary
 
+def type_get_data():
+    return int(input('Что Вы хотите сделать?\n1. Записать новый контакт;\n2. Вывести контакт в одну строку;\n3. Вывести контакт в несколько строк\n'))
 
-def get_data(data, title):
-    print(f'{title} : {data}')
+
 

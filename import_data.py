@@ -20,5 +20,8 @@ def rows_imp(dictionary):
             file_writer.writerow(list1)
         file_writer.writerow([])
 
+def import_data_controller(data):
+    row_imp(data)
+    rows_imp(data)
 
 

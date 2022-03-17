@@ -1,10 +1,11 @@
 import user_input, import_data, export
 
-def import_data_controller(data):
-    import_data.row_imp(data)
-    import_data.rows_imp(data)
+def console():
+    type_action = user_input.type_get_data()
+    if type_action == 1:
+        import_data.import_data_controller(user_input.input_data())
+    if type_action == 2:
+        export.row_exp()
+    if type_action == 3:
+        export.rows_exp()
 
-import_data_controller(user_input.input_data())
-
-# def export_data_controller(data):
-#     if
